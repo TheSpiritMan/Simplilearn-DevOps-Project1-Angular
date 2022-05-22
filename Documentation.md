@@ -5,7 +5,7 @@
 - In project 1, we practice DevOps using Docker, Node.js, Angular-CLI and Linux(Ubuntu) as a base image for Dockerfile and lastly but not least use `docker-compose` to manage docker container.
 
 # Methodology
-## `Intellij Ultimate` as Idle.
+## `Intellij Idea` as Idle.
    - Install it on your own.
    - Create new project and select on `Angular CLI` and named the project according to your choice. Press `Create`.
    - Wait until the Intellij create the default angular project for you.
