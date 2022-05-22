@@ -16,7 +16,7 @@
 
 
 ## Docker and Docker-compose
-  - Enter `sudo apt install -y docker.io docker-compose` to install `docker` and `docker-compose`.
+  - Enter `sudo apt install -y docker.io docker-compose` to install `docker` and `docker-compose` in your `ubuntu` distro.
   - Then enter `sudo usermod -aG docker $USER` to add your current user in docker group.
   - Then enter `newgrp docker` to relist the user in `docker` group.
   - `Docker` and `docker-compose` is now available in your system.
@@ -35,11 +35,11 @@
     FROM ubuntu/nginx
     COPY --from=node /app/dist/simplilearn-dev-ops-project1-angular /var/www/html
     ````
-  - Open terminal, build docker image from the above docker file. Command to build: 
+  - Open terminal, build docker image from the above Dockerfile. Command to build: 
     ````
     docker build -t $IMAGE_NAME:$TAG -f Dockerfile .
     ````
-  - Remember to change the `$IMAGE_NAME` nad `$TAG` with the desire name and version of the image.
+  - Remember to change the `$IMAGE_NAME` and `$TAG` with the desire name and version of the image.
 
 ## Docker Hub
 - Docker Hub is a popular and public registry for the docker images.
