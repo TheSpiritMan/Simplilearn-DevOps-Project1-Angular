@@ -1,15 +1,15 @@
 # Description
 - This is the official documentation of this project.
-- This project is assigned by Simplilearn on `Learn DevOps Basics Skill` course. It is a free course with completion certificate.
+- This project is assigned by Simplilearn on `Getting Started With DevOps` course. It is a free course with completion certificate.
 - Link to course in [Simplilearn](https://www.simplilearn.com/learn-devops-basics-skillup).
-- In project 1, we practice DevOps using Docker, Node.js, Angular-CLI and Linux(Ubuntu) as a base image for Dockerfile and lastly but not least use `docker-compose` to manage docker container.
+- In project 1, we practice DevOps using Docker, Node.js, Angular-CLI and Linux(Ubuntu) as a base image for Dockerfile and last but not least use `docker-compose` to manage docker container.
 
 # Methodology
 ## `Intellij Idea` as Idle.
    - Install it on your own.
    - Create new project and select on `Angular CLI` and named the project according to your choice. Press `Create`.
    - Wait until the Intellij create the default angular project for you.
-   - Once Intellij completely generated the source code, open the terminal inside the project directory. And enter `ng serve` to compile and run the project.
+   - Once Intellij completely generates the source code, open the terminal inside the project directory. And enter `ng serve` to compile and run the project.
    - By default, the project runs on `Port 4200`. 
    - Visit [http://localhost:4200](http://localhost:4200) on your browser to open the project.
    - Once project runs successfully, now enter `ng build` command to build the project. The build artifacts will be stored in `dist/` directory.
@@ -54,8 +54,8 @@
 - Using `-d` flag will run the container in detached mode.
 - Using `-p` flag will publish the port of the container.
 - Using `--name` flag will assign custom_name to a container.
-- Change `$IMAGE_NAME`,`$TAG` and `$CONTAINER_NAME` with the docker image name,its tag and assign the container name according to your wish.
-- Visit [http://localhost:8080](http://localhost:8080) on your browser to open the project. Remember this webpage in open using your container.
+- Change `$IMAGE_NAME`,`$TAG` and `$CONTAINER_NAME` with the docker image name, its tag and assign the container name according to your wish.
+- Visit [http://localhost:8080](http://localhost:8080) on your browser to open the project. Remember this webpage is running using your container.
 
 ## Docker Compose
 - You can use above docker process to manually create docker image and run it using `docker run` command.
@@ -104,7 +104,7 @@ Commands:
 ```` 
 docker-compose build
 ````
-- The image name of the service can be found as `$Directory-Name_$Service-Name`. `$Directory_Name` refers the directory in which `docker-compose.yml` file is present and `$Service-Name` refers the name of service which is defined in `docker-compose.yml` file.
+- The image name of the service can be found as `$Directory-Name_$Service-Name`. `$Directory_Name` refers to the directory in which `docker-compose.yml` file is present and `$Service-Name` refers to the name of service which is defined in `docker-compose.yml` file.
 - By default, the `docker-compose` takes `docker-compose.yml` file as configuration file.
 - Command to run service: 
 ````
