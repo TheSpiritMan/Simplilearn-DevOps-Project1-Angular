@@ -56,3 +56,65 @@
 - Using `--name` flag will assign custom_name to a container.
 - Change `$IMAGE_NAME`,`$TAG` and `$CONTAINER_NAME` with the docker image name,its tag and assign the container name according to your wish.
 - Visit [http://localhost:8080](http://localhost:8080) on your browser to open the project. Remember this webpage in open using your container.
+
+## Docker Compose
+- You can use above docker process to manually create docker image and run it using `docker run` command.
+- Or you can manage docker service using `docker-compose`.
+- Create new empty file in home directory of your project and named as `docker-compose.yml`. Enter below command:
+````
+services:
+  web:
+    build: .
+````
+- Save the file. And open your terminal.
+- Below are some of `docker-compose` commands:
+````
+Usage:
+  docker-compose [COMMAND]
+
+Commands:
+  build              Build or rebuild services
+  config             Validate and view the Compose file
+  create             Create services
+  down               Stop and remove resources
+  events             Receive real time events from containers
+  exec               Execute a command in a running container
+  help               Get help on a command
+  images             List images
+  kill               Kill containers
+  logs               View output from containers
+  pause              Pause services
+  port               Print the public port for a port binding
+  ps                 List containers
+  pull               Pull service images
+  push               Push service images
+  restart            Restart services
+  rm                 Remove stopped containers
+  run                Run a one-off command
+  scale              Set number of containers for a service
+  start              Start services
+  stop               Stop services
+  top                Display the running processes
+  unpause            Unpause services
+  up                 Create and start containers
+  version            Show version information and quit
+````
+- Now we can build the image of the service using `docker-compose.yml` file.
+- Command to build image of service:
+```` 
+docker-compose build
+````
+- The image name of the service can be found as `$Directory-Name_$Service-Name`. `$Directory_Name` refers the directory in which `docker-compose.yml` file is present and `$Service-Name` refers the name of service which is defined in `docker-compose.yml` file.
+- By default, the `docker-compose` takes `docker-compose.yml` file as configuration file.
+- Command to run service: 
+````
+docker-compose up
+````
+- Command to list container: 
+````
+docker-compose ps
+````
+- Command to stop and delete container: 
+````
+docker-compose down
+````
