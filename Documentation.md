@@ -46,7 +46,7 @@
 - Command to push the docker image in docker hub: 
   `docker push $IMAGE_NAME:$TAG`
 - Docker image of this project can be found in Docker Hub under my account.
-- [Link](https://hub.docker.com/repository/docker/thespiritman/simplilearn-devops-project1-angular) to the image of this project in Docker Hub. 
+- [Link](https://hub.docker.com/r/thespiritman/simplilearn-devops-project1-angular) to the image of this project in Docker Hub. 
 
 ## Run Angular application using Docker image.
 - Open terminal. Enter command:
